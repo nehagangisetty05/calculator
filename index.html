@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calsi.css">
+    <script src = "./calci.js" defer></script>
+</head>
+<body>
+    <form action="" id="container" name="cForm">
+        <input type="text" id="display" name="Answer">
+        <div class="buttonContainer">
+            <input type= "button" class="buttons" value="1" onclick="cForm.Answer.value += '1'">
+            <input type= "button" class="buttons" value="2" onclick="cForm.Answer.value += '2'">
+            <input type= "button" class="buttons" value="3" onclick="cForm.Answer.value += '3'">
+            <input type= "button" class="buttons" value="+" onclick="cForm.Answer.value += '+'">
+        </div>
+        <div class="buttonContainer">
+            <input type= "button" class="buttons" value="4" onclick="cForm.Answer.value += '4'">
+            <input type= "button" class="buttons" value="5" onclick="cForm.Answer.value += '5'">
+            <input type= "button" class="buttons" value="6" onclick="cForm.Answer.value += '6'">
+            <input type= "button" class="buttons" value="-" onclick="cForm.Answer.value += '-'">
+        </div>
+        <div class="buttonContainer">
+            <input type= "button" class="buttons" value="7" onclick="cForm.Answer.value += '7'">
+            <input type= "button" class="buttons" value="8" onclick="cForm.Answer.value += '8'">
+            <input type= "button" class="buttons" value="9" onclick="cForm.Answer.value += '9'">
+            <input type= "button" class="buttons" value="*" onclick="cForm.Answer.value += '*'">
+        </div>
+        <div class="buttonContainer">
+            <input type="button" class="buttons" value="." onclick="cForm.Answer.value += '.'">
+            <input type="button" class="buttons" value="0" onclick="cForm.Answer.value += '0'">
+            <input type="button" class="buttons" value="%" onclick="cForm.Answer.value += '%'">
+            <input type="button" class="buttons" value="/" onclick="cForm.Answer.value += '/'">
+        </div>
+        <div class="buttonContainer">
+            <input type="button" class="splbuttons" value="Clear" onclick="cForm.Answer.value=''">
+            <input type="button" class="splbuttons" value="=" onclick="cForm.Answer.value = eval(cForm.Answer.value)">
+        </div>
+        <!-- <audio src="./Asset/audio/happy-pop-3-185288.mp3"></audio> -->
+    </form>
+</body>
+</html>
